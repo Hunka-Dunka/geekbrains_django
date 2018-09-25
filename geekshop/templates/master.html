@@ -1,0 +1,38 @@
+<!doctype html>
+
+{% load static %}
+
+
+<html>
+
+<head>
+    <title>Stock info</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'mainapp/style.css' %}">
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <img src="{% static 'mainapp/img/competition.svg' %}" width="100px">
+        <ul class="menu">
+            <li><a href="..">Главная</a></li>
+            <li><a href="../catalog/">Каталог</a></li>
+            <li><a href="../contacts/">Контакты</a></li>
+        </ul>
+
+    </header>
+    <hr/>
+    {% block page_content %}
+    {% endblock %}
+
+
+    <footer>
+        <hr/>
+        Все права защищены ©<br/> Наверное.
+    </footer>
+</div>
+</body>
+
+
+</html>

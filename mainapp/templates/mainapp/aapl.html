@@ -1,26 +1,8 @@
-<!doctype html>
-<html>
+{% extends 'master.html' %}
 
-<head>
-  <title>AAPL</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
+{% load static %}
 
-</head>
-
-<body class="stock">
-    <div class="container">
-      <header>
-        <img src="img/competition.svg" width="100px">
-        <ul class="menu">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-
-      </header>
-
-  <hr/>
+{% block page_content %}
   <h1>
   AAPL
 </h1>
@@ -35,7 +17,6 @@
   <h2>
   Характеристики товара
 </h2>
-  <p>
     <ul class="with_pic">
       <li><b>Тикер:</b> AAPL<br/></li>
       <li><b>Единицы:</b> Shares<br/></li>
@@ -48,12 +29,11 @@
       <li><b>Стоимость шага:</b> 0.01 $<br/></li>
       <li><b><a href="https://www.nasdaq.com/symbol/aapl"  target="_blank">Спецификация</a></b><br/></li>
     </ul>
-  </p>
   <h2>
   График
 </h2>
-  <a href="img/AAPL_chart.PNG" target="_blank">
-    <img src="img/AAPL_chart.PNG" width="100%"></a>
+<a href="{% static 'mainapp/img/AAPL_chart.PNG' %}" target="_blank">
+  <img src="{% static 'mainapp/img/AAPL_chart.PNG' %}" width="100%"></a>
   <br/>
   <br/>
   <h2>
@@ -69,13 +49,4 @@
     executive offices of&nbsp;which are located at&nbsp;1&nbsp;Infinite Loop, Cupertino, California 95014&nbsp;&mdash; has retail stores around the world, with more than 300 locations as&nbsp;of&nbsp;2012. Apple has five reportable operating segments:
     Americas, Europe, Japan, Asia-Pacific and Retail. The geographic-based segments do&nbsp;not include the results of&nbsp;the Retail segment. Despite Apple&rsquo;s market-leading position, the company still faces a&nbsp;number of&nbsp;risk factors,
     which include changing global economic conditions, fluctuating consumer demand, worldwide-competition and potential supply chain disruptions.</p>
-  <footer>
-    <hr/> Все права защищены ©<br/> Наверное.
-    <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
-        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-  </footer>
-</div>
-</body>
-
-
-</html>
+{% endblock %}

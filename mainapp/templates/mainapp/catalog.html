@@ -1,37 +1,16 @@
-<!doctype html>
-<html>
+{% extends 'master.html' %}
 
-<head>
-  <title>Stock info</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+{% load static %}
 
-<body>
-    <div class="container">
-      <header>
-        <img src="img/competition.svg" width="100px">
-        <ul class="menu">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-
-      </header>
+{% block page_content %}
   <h1>Каталог</h1>
   <div class="catalog">
   <div>
-  <img src="img/aapl_logo.png">
+    <img src="{% static 'mainapp/img/aapl_logo.png' %}">
 </div>
 <div>
-  <a href="aapl.html">AAPL</a>
+  <a href="../aapl/">AAPL</a>
 </div>
 </div>
-  <footer>
-    <hr/> Все права защищены ©<br/> Наверное.
-  </footer>
-</div>
-</body>
+{% endblock %}
 
-
-</html>

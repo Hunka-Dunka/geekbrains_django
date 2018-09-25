@@ -12,3 +12,7 @@ def catalog(request):
 
 def contacts(request):
     return render(request, 'mainapp/contacts.html')
+
+
+def aapl(request):
+    return render(request, 'mainapp/aapl.html')
