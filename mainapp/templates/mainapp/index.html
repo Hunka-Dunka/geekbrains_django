@@ -1,36 +1,12 @@
+{% extends 'master.html' %}
+
 {% load static %}
 
-<!doctype html>
-<html>
+{% block page_content %}
 
-<head>
-  <title>Stock info</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="{% static 'mainapp/style.css' %}">
-</head>
-
-<body>
-  <div class="container">
-    <header>
-      <img src="{% static 'mainapp/img/competition.svg' %}" width="100px">
-      <ul class="menu">
-        <li><a href="">Главная</a></li>
-        <li><a href="catalog/">Каталог</a></li>
-        <li><a href="contacts/">Контакты</a></li>
-      </ul>
-
-    </header>
-  <hr/>
-  <h1> Stock info</h1>
-  <br/>
-  <br/>
-  <h2>Дратути</h2>
-  <img src="{% static 'mainapp/img/doge.jpg' %}">
-  <footer>
-    <hr/> Все права защищены ©<br/> Наверное.
-  </footer>
-  </div>
-</body>
-
-
-</html>
+<h1> Stock info</h1>
+<br/>
+<br/>
+<h2>Дратути</h2>
+<img src="{% static 'mainapp/img/doge.jpg' %}">
+{% endblock %}
